@@ -4,6 +4,7 @@ import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
@@ -15,35 +16,34 @@ import spittr.db.SpittleRepository;
 import spittr.db.jdbc.JdbcSpitterRepository;
 import spittr.db.jdbc.JdbcSpittleRepository;
 
+// @ImportResource("classpath:spittr/db/jdbc/JdbcRepositoryTests-context.xml")
 @Configuration
 public class JdbcConfig {
+    @Bean
+    public DataSource dataSource() {
+        return new EmbeddedDatabaseBuilder()
+                .setType(EmbeddedDatabaseType.H2)
+                .addScripts("classpath:spittr/db/jdbc/schema.sql", "classpath:spittr/db/jdbc/test-data.sql")
+                .build();
+    }
 
-  @Bean
-  public DataSource dataSource() {
-    return new EmbeddedDatabaseBuilder()
-      .setType(EmbeddedDatabaseType.H2)
-      .addScripts("classpath:spittr/db/jdbc/schema.sql", "classpath:spittr/db/jdbc/test-data.sql")
-      .build();
-  }
-  
-  @Bean
-  public JdbcTemplate jdbcTemplate(DataSource dataSource) {
-    return new JdbcTemplate(dataSource);
-  }
-  
-  @Bean
-  public SpitterRepository spitterRepository(JdbcTemplate jdbcTemplate) {
-    return new JdbcSpitterRepository(jdbcTemplate);
-  }
+    @Bean
+    public JdbcTemplate jdbcTemplate(DataSource dataSource) {
+        return new JdbcTemplate(dataSource);
+    }
 
-  @Bean
-  public SpittleRepository spittleRepository(JdbcTemplate jdbcTemplate) {
-    return new JdbcSpittleRepository(jdbcTemplate);
-  }
-  
-  @Bean
-  public PlatformTransactionManager transactionManager(DataSource dataSource) {
-    return new DataSourceTransactionManager(dataSource);
-  }
+    @Bean
+    public SpitterRepository spitterRepository(JdbcTemplate jdbcTemplate) {
+        return new JdbcSpitterRepository(jdbcTemplate);
+    }
 
+    @Bean
+    public SpittleRepository spittleRepository(JdbcTemplate jdbcTemplate) {
+        return new JdbcSpittleRepository(jdbcTemplate);
+    }
+
+    @Bean
+    public PlatformTransactionManager transactionManager(DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
+    }
 }
