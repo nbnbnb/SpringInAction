@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
+      <module name="demo-jdbc" target="1.8" />
+      <module name="demo-root" target="1.8" />
       <module name="SpringInAction" target="1.8" />
     </bytecodeTargetLevel>
   </component>
