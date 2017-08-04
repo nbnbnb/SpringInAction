@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo-jdbc" />
         <module name="demo-jsp" />
+        <module name="demo-thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -15,6 +16,7 @@
       <module name="demo-jdbc (1)" target="1.8" />
       <module name="demo-jsp" target="1.8" />
       <module name="demo-root" target="1.8" />
+      <module name="demo-thymeleaf" target="1.8" />
       <module name="SpringInAction" target="1.8" />
     </bytecodeTargetLevel>
   </component>
