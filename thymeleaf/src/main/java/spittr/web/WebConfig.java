@@ -3,18 +3,13 @@ package spittr.web;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.context.ContextLoader;
-import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.thymeleaf.spring4.SpringTemplateEngine;
+import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
-import org.thymeleaf.templateresolver.AbstractConfigurableTemplateResolver;
-import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
-
-import javax.servlet.ServletContext;
 
 
 @Configuration
@@ -30,22 +25,20 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     }
 
     @Bean
-    public SpringTemplateEngine templateEngine(AbstractConfigurableTemplateResolver templateResolver) {
+    public SpringTemplateEngine templateEngine(SpringResourceTemplateResolver templateResolver) {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver);
         return templateEngine;
     }
 
     @Bean
-    public AbstractConfigurableTemplateResolver templateResolver() {
+    public SpringResourceTemplateResolver templateResolver() {
 
-        WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();
-        ServletContext servletContext = webApplicationContext.getServletContext();
-
-        AbstractConfigurableTemplateResolver templateResolver = new ServletContextTemplateResolver(servletContext);
+        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode("HTML5");
+
         return templateResolver;
     }
 
