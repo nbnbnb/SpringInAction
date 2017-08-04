@@ -9,6 +9,7 @@
         <module name="demo-jdbc" />
         <module name="demo-jsp" />
         <module name="demo-thymeleaf" />
+        <module name="demo-tiles" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -16,6 +17,8 @@
       <module name="demo-jsp" target="1.8" />
       <module name="demo-root" target="1.8" />
       <module name="demo-thymeleaf" target="1.8" />
+      <module name="demo-thymeleaf (1)" target="1.8" />
+      <module name="demo-tiles" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

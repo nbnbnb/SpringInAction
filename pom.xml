@@ -13,6 +13,7 @@
         <module>./jdbc</module>
         <module>./jsp</module>
         <module>./thymeleaf</module>
+        <module>./tiles</module>
     </modules>
     <build>
         <plugins>

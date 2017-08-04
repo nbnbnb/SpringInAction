@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/jsp" />
     <file type="web" url="file://$PROJECT_DIR$/thymeleaf" />
+    <file type="web" url="file://$PROJECT_DIR$/tiles" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

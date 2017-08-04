@@ -16,33 +16,30 @@ import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 @ComponentScan("spittr.web")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-  @Override
-  public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-    configurer.enable();
-  }
-  
-  @Override
-  public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    // TODO Auto-generated method stub
-    super.addResourceHandlers(registry);
-  }
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
+    }
 
-  
-  // Tiles
-  @Bean
-  public TilesConfigurer tilesConfigurer() {
-    TilesConfigurer tiles = new TilesConfigurer();
-    tiles.setDefinitions(new String[] {
-        "/WEB-INF/layout/tiles.xml",
-        "/WEB-INF/views/**/tiles.xml"
-    });
-    tiles.setCheckRefresh(true);
-    return tiles;
-  }
-  
-  @Bean
-  public ViewResolver viewResolver() {
-    return new TilesViewResolver();
-  }
-  
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // TODO Auto-generated method stub
+        super.addResourceHandlers(registry);
+    }
+
+
+    // Tiles
+    @Bean
+    public TilesConfigurer tilesConfigurer() {
+        TilesConfigurer tiles = new TilesConfigurer();
+        tiles.setDefinitions("/WEB-INF/layout/tiles.xml", "/WEB-INF/views/**/tiles.xml");
+        tiles.setCheckRefresh(true);
+        return tiles;
+    }
+
+    @Bean
+    public ViewResolver viewResolver() {
+        return new TilesViewResolver();
+    }
+
 }
