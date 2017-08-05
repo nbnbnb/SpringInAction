@@ -82,5 +82,6 @@
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-template:3.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-autotag-core-runtime:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-request-jsp:1.0.6" level="project" />
+    <orderEntry type="module" module-name="common" />
   </component>
 </module>

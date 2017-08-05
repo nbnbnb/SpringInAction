@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="demo-tiles:war exploded">
-    <output-path>$PROJECT_DIR$/tiles/target/demo-tiles-1.0.0</output-path>
+    <output-path>$PROJECT_DIR$/tiles/target/demo-tiles-1.1.1</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -45,10 +45,13 @@
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-template:3.0.7" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-autotag-core-runtime:1.2" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-jsp:1.0.6" />
+          <element id="archive" name="demo-common-1.1.1.jar">
+            <element id="module-output" name="common" />
+          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/tiles/target/demo-tiles-1.0.0/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/tiles/target/demo-tiles-1.1.1/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="demo-tiles/web/Web" />
     </root>

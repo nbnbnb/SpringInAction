@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common" />
         <module name="demo-jdbc" />
         <module name="demo-jsp" />
         <module name="demo-thymeleaf" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="common" target="1.8" />
       <module name="demo-jdbc" target="1.8" />
       <module name="demo-jsp" target="1.8" />
       <module name="demo-root" target="1.8" />

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc/demo-jdbc.iml" filepath="$PROJECT_DIR$/jdbc/demo-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsp/demo-jsp.iml" filepath="$PROJECT_DIR$/jsp/demo-jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-root.iml" filepath="$PROJECT_DIR$/demo-root.iml" />
