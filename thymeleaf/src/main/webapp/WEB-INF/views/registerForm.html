@@ -5,7 +5,6 @@
     <title>Spitter</title>
     <link rel="stylesheet" type="text/css"
           th:href="@{/resources/style.css}"></link>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 <div id="header" th:include="page :: header"></div>
@@ -13,11 +12,11 @@
 <div id="content">
     <h1>Register</h1>
 
-    <form method="POST" th:object="${spitter}" accept-charset="UTF-8">
+    <form method="POST" th:object="${spitter}">
         <div class="errors" th:if="${#fields.hasErrors('*')}">
             <ul>
-                <li th:each="err : ${#fields.errors('*')}"
-                    th:text="${err}">Input is incorrect
+                <li th:each="err : ${#fields.errors('*')}" th:text="${err}">
+                    Input is incorrect
                 </li>
             </ul>
         </div>
