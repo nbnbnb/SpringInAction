@@ -1,11 +1,11 @@
 package spittr;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.hibernate.validator.constraints.Email;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class Spitter {
 
@@ -28,7 +28,7 @@ public class Spitter {
   private String lastName;
 
   @NotNull
-  @Email
+  @Email(message = "{email.valid}")
   private String email;
 
   public Spitter() {}
