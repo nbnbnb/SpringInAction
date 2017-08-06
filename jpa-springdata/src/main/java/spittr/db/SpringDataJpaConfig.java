@@ -12,14 +12,14 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories("com.habuma.spitter.db")
+@EnableJpaRepositories("spittr.db")
 public class SpringDataJpaConfig {
 
     @Bean
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
-                .addScript("classpath:/com/habuma/spitter/db/jpa/schema.sql")
-                .addScript("classpath:/com/habuma/spitter/db/jpa/test-data.sql")
+                .addScript("classpath:/spittr/db/jpa/schema.sql")
+                //.addScript("classpath:/spittr/db/jpa/test-data.sql")
                 .build();
     }
 

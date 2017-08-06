@@ -21,7 +21,7 @@ public class SpitterRepositoryTest {
 
     private static Spitter[] SPITTERS = new Spitter[6];
     @Autowired
-    SpitterRepository spitterRepository;
+    private SpitterRepository spitterRepository;
 
     private static void assertSpitter(int expectedSpitterIndex, Spitter actual) {
         assertSpitter(expectedSpitterIndex, actual, "Newbie");

@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 public class SpittleRepositoryTest {
 
     @Autowired
-    SpittleRepository spittleRepository;
+    private SpittleRepository spittleRepository;
 
     @Test
     @Transactional
