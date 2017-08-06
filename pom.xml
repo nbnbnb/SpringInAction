@@ -20,6 +20,7 @@
         <module>./tiles</module>
         <module>./common</module>
         <module>./hibernate5</module>
+        <module>./jpa-hibernate</module>
     </modules>
     <build>
         <plugins>

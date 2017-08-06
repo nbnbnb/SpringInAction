@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/hibernate5/demo-hibernate5.iml" filepath="$PROJECT_DIR$/hibernate5/demo-hibernate5.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc/demo-jdbc.iml" filepath="$PROJECT_DIR$/jdbc/demo-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-hibernate/demo-jpa-hibernate.iml" filepath="$PROJECT_DIR$/jpa-hibernate/demo-jpa-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsp/demo-jsp.iml" filepath="$PROJECT_DIR$/jsp/demo-jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-root.iml" filepath="$PROJECT_DIR$/demo-root.iml" />
       <module fileurl="file://$PROJECT_DIR$/thymeleaf/demo-thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/demo-thymeleaf.iml" />

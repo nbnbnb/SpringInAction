@@ -1,5 +1,6 @@
 package spittr.web;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 import spittr.Spitter;
@@ -8,8 +9,7 @@ import spittr.data.SpitterRepository;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
 public class SpitterControllerTest {
@@ -45,12 +45,9 @@ public class SpitterControllerTest {
     }
 
     @Test
+    @Ignore
     public void shouldFailValidationWithNoData() throws Exception {
 
-        // Error 验证不起作用
-        // 注释掉
-
-        /*
         SpitterRepository mockRepository = mock(SpitterRepository.class);
         SpitterController controller = new SpitterController(mockRepository);
         MockMvc mockMvc = standaloneSetup(controller).build();
@@ -61,7 +58,7 @@ public class SpitterControllerTest {
                 .andExpect(model().errorCount(5))
                 .andExpect(model().attributeHasFieldErrors(
                         "spitter", "firstName", "lastName", "username", "password", "email"));
-                        */
+
     }
 
 }
