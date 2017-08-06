@@ -19,7 +19,7 @@
         <module>./thymeleaf</module>
         <module>./tiles</module>
         <module>./common</module>
-        <module>./hibernate4</module>
+        <module>./hibernate5</module>
     </modules>
     <build>
         <plugins>

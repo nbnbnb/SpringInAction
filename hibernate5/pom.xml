@@ -44,7 +44,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>demo-hibernate4</artifactId>
+    <artifactId>demo-hibernate5</artifactId>
     <version>${module.version}</version>
 
 </project>
