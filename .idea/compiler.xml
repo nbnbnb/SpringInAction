@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="demo-hibernate4" />
         <module name="demo-jdbc" />
         <module name="demo-jsp" />
         <module name="demo-thymeleaf" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="common" target="1.8" />
+      <module name="demo-hibernate4" target="1.8" />
       <module name="demo-jdbc" target="1.8" />
       <module name="demo-jsp" target="1.8" />
       <module name="demo-root" target="1.8" />
