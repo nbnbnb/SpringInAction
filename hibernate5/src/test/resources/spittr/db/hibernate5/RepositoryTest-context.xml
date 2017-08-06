@@ -10,7 +10,7 @@
     <context:component-scan base-package="spittr.db.hibernate5"/>
 
     <bean id="transactionManager"
-          class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+          class="org.springframework.orm.hibernate5.HibernateTransactionManager"
           c:_-ref="sessionFactory"/>
 
     <jdbc:embedded-database id="dataSource" type="H2">
@@ -18,9 +18,9 @@
         <jdbc:script location="spittr/db/hibernate5/test-data.sql"/>
     </jdbc:embedded-database>
 
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan" value="spitter.domain"/>
+        <property name="packagesToScan" value="spittr.domain"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="dialect">org.hibernate.dialect.H2Dialect</prop>

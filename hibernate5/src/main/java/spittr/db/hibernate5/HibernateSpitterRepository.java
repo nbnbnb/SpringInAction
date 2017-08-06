@@ -8,8 +8,13 @@ import org.springframework.stereotype.Repository;
 import spittr.db.SpitterRepository;
 import spittr.domain.Spitter;
 
+import javax.persistence.criteria.Root;
 import java.io.Serializable;
 import java.util.List;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+
 
 @Repository
 public class HibernateSpitterRepository implements SpitterRepository {
@@ -44,15 +49,42 @@ public class HibernateSpitterRepository implements SpitterRepository {
     }
 
     public Spitter findByUsername(String username) {
-        return (Spitter) currentSession()
-                .createCriteria(Spitter.class)
-                .add(Restrictions.eq("username", username))
-                .list().get(0);
+
+        Session session = currentSession();
+
+        // Create CriteriaBuilder
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Spitter> criteria = builder.createQuery(Spitter.class);
+        Root<Spitter> spitterRootRoot = criteria.from(Spitter.class);
+        criteria.select(spitterRootRoot);
+
+        //**Adding where clause**
+        criteria.where(builder.equal(spitterRootRoot.get("username"), username));
+
+        return session.createQuery(criteria).getResultList().get(0);
+
+//        return (Spitter) currentSession()
+//                .createCriteria(Spitter.class)
+//                .add(Restrictions.eq("username", username))
+//                .list().get(0);
     }
 
     public List<Spitter> findAll() {
-        return (List<Spitter>) currentSession()
-                .createCriteria(Spitter.class).list();
+
+        Session session = currentSession();
+
+        // Create CriteriaBuilder
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Spitter> criteria = builder.createQuery(Spitter.class);
+        Root<Spitter> spitterRootRoot = criteria.from(Spitter.class);
+        criteria.select(spitterRootRoot);
+
+        return session.createQuery(criteria).getResultList();
+
+//        return (List<Spitter>) currentSession()
+//                .createCriteria(Spitter.class).list();
+
+
     }
 
 }

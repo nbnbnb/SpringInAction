@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
@@ -23,6 +24,7 @@ import java.util.Properties;
 @ComponentScan
 public class RepositoryTestConfig implements TransactionManagementConfigurer {
 
+
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -30,8 +32,8 @@ public class RepositoryTestConfig implements TransactionManagementConfigurer {
     public DataSource dataSource() {
         EmbeddedDatabaseBuilder edb = new EmbeddedDatabaseBuilder();
         edb.setType(EmbeddedDatabaseType.H2);
-        edb.addScript("spittr/db/hibernate4/schema.sql");
-        edb.addScript("spittr/db/hibernate4/test-data.sql");
+        edb.addScript("spittr/db/hibernate5/schema.sql");
+        edb.addScript("spittr/db/hibernate5/test-data.sql");
         EmbeddedDatabase embeddedDatabase = edb.build();
         return embeddedDatabase;
     }
@@ -59,4 +61,5 @@ public class RepositoryTestConfig implements TransactionManagementConfigurer {
             return null;
         }
     }
+
 }

@@ -19,6 +19,7 @@ import static org.junit.Assert.assertEquals;
 public class SpitterRepositoryTest {
 
     private static Spitter[] SPITTERS = new Spitter[6];
+
     @Autowired
     SpitterRepository spitterRepository;
 
@@ -26,8 +27,7 @@ public class SpitterRepositoryTest {
         assertSpitter(expectedSpitterIndex, actual, "Newbie");
     }
 
-    private static void assertSpitter(int expectedSpitterIndex, Spitter actual,
-                                      String expectedStatus) {
+    private static void assertSpitter(int expectedSpitterIndex, Spitter actual, String expectedStatus) {
         Spitter expected = SPITTERS[expectedSpitterIndex];
         assertEquals(expected.getId(), actual.getId());
         assertEquals(expected.getUsername(), actual.getUsername());

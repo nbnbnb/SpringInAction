@@ -17,10 +17,12 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = RepositoryTestConfig.class)
+// 如果使用配置文件，则将上面的注释掉，同时将 RepositoryTestConfig 的 @Configuration 也注释掉
+//@ContextConfiguration("classpath:spittr/db/hibernate5/RepositoryTest-context.xml")
 public class SpittleRepositoryTest {
 
     @Autowired
-    SpittleRepository spittleRepository;
+    private SpittleRepository spittleRepository;
 
     @Test
     @Transactional
