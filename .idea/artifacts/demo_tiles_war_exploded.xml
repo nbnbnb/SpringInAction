@@ -39,7 +39,7 @@
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-autotag-core-runtime:1.2" />
           <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-jsp:1.0.6" />
           <element id="archive" name="demo-common-1.1.1.jar">
-            <element id="module-output" name="common" />
+            <element id="module-output" name="demo-common" />
           </element>
         </element>
       </element>

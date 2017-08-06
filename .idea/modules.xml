@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/demo-common.iml" filepath="$PROJECT_DIR$/common/demo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contacts/demo-contacts.iml" filepath="$PROJECT_DIR$/contacts/demo-contacts.iml" />
       <module fileurl="file://$PROJECT_DIR$/hibernate5/demo-hibernate5.iml" filepath="$PROJECT_DIR$/hibernate5/demo-hibernate5.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc/demo-jdbc.iml" filepath="$PROJECT_DIR$/jdbc/demo-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-hibernate/demo-jpa-hibernate.iml" filepath="$PROJECT_DIR$/jpa-hibernate/demo-jpa-hibernate.iml" />

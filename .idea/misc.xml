@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/hibernate4/pom.xml" />
         <option value="$PROJECT_DIR$/jpa-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/jpa-springdata/pom.xml" />
+        <option value="$PROJECT_DIR$/contacts/pom.xml" />
       </list>
     </option>
   </component>

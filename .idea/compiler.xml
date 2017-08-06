@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="demo-common" />
+        <module name="demo-contacts" />
         <module name="demo-hibernate4" />
         <module name="demo-hibernate5" />
         <module name="demo-jdbc" />
@@ -19,6 +21,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="common" target="1.8" />
+      <module name="demo-common" target="1.8" />
+      <module name="demo-contacts" target="1.8" />
       <module name="demo-hibernate4" target="1.8" />
       <module name="demo-hibernate5" target="1.8" />
       <module name="demo-jdbc" target="1.8" />

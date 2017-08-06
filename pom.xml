@@ -22,6 +22,7 @@
         <module>./hibernate5</module>
         <module>./jpa-hibernate</module>
         <module>./jpa-springdata</module>
+        <module>./contacts</module>
     </modules>
     <build>
         <plugins>

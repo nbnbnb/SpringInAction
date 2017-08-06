@@ -11,6 +11,7 @@
 
     <artifactId>demo-common</artifactId>
     <version>${module.version}</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

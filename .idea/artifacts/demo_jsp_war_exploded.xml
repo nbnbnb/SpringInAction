@@ -26,7 +26,7 @@
           <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-spec:1.2.5" />
           <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-impl:1.2.5" />
           <element id="archive" name="demo-common-1.1.1.jar">
-            <element id="module-output" name="common" />
+            <element id="module-output" name="demo-common" />
           </element>
         </element>
       </element>
