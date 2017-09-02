@@ -9,10 +9,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class App {
     public static void main(String[] args) {
-        h2();
-        sqlserver();
+        //h2();
+        //sqlserver();
         sqlserverWithXml();
-        h2WithXml();
+        //h2WithXml();
     }
 
     private static void h2() {
