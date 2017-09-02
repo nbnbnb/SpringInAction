@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Import;
 
 import javax.sql.DataSource;
 
-@Import(AppConfig.class)
-public class SQLServerConfig {
+@Import(JavaSqlSessionFactoryConfig.class)
+public class SQLServerDataSourceConfig {
     @Bean
     public DataSource dataSource() {
 

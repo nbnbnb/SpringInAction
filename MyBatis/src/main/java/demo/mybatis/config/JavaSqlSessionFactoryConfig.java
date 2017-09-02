@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 
 
 @ComponentScan(basePackageClasses = {BlogRepository.class})
-public class AppConfig {
+public class JavaSqlSessionFactoryConfig {
 
     @Bean
     public SqlSessionFactory getSqlSessionFactory(DataSource dataSource) {

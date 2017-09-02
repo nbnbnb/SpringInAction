@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 @ComponentScan(basePackageClasses = {BlogRepositoryXML.class})
-public class SQLServerXMLConfig {
+public class H2XMLSqlSessionFactoryConfig {
     @Bean
     public SqlSessionFactory getSqlSessionFactory() throws IOException {
         String resource = "mybatis-config-sqlserver.xml";  // 从 XML 文件中获取 DataSource 数据

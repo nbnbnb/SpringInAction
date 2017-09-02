@@ -7,8 +7,8 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
 import javax.sql.DataSource;
 
-@Import(AppConfig.class)
-public class H2Config {
+@Import(JavaSqlSessionFactoryConfig.class)
+public class H2DataSourceConfig {
     @Bean
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
