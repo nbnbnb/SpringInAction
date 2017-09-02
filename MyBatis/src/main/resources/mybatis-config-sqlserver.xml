@@ -10,6 +10,9 @@
         <property name="username" value="sa"/>
         <property name="password" value="123456..."/>
     </properties>
+    <typeHandlers>
+        <typeHandler handler="demo.mybatis.extension.MyStringTypeHandler"/>
+    </typeHandlers>
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -20,11 +23,8 @@
                 <property name="password" value="${password}"/>
             </dataSource>
         </environment>
-
     </environments>
-
     <mappers>
         <mapper resource="BlogMapper.xml"/>
     </mappers>
-
 </configuration>
