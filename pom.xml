@@ -23,6 +23,7 @@
         <module>./jpa-hibernate</module>
         <module>./jpa-springdata</module>
         <module>./contacts</module>
+        <module>MyBatis</module>
     </modules>
     <build>
         <plugins>

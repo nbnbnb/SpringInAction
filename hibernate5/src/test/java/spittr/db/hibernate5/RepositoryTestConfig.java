@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
@@ -50,7 +49,7 @@ public class RepositoryTestConfig implements TransactionManagementConfigurer {
         try {
             LocalSessionFactoryBean lsfb = new LocalSessionFactoryBean();
             lsfb.setDataSource(dataSource());
-            lsfb.setPackagesToScan("spittr.domain");
+            lsfb.setPackagesToScan("spittr.repo");
             Properties props = new Properties();
             props.setProperty("dialect", "org.hibernate.dialect.H2Dialect");
             lsfb.setHibernateProperties(props);

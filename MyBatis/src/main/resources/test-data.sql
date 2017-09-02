@@ -1,0 +1,15 @@
+insert into Blog (title, content, postedTime) values ('test title', 'This is a test Blog content', '2012-06-09 22:00:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'This is another test Blog content', '2012-06-09 22:10:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'This is a third test Blog content', '2012-07-04 23:30:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Hello from Chuck!', '2012-03-25 12:15:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Hello from Art!', '2012-03-25 12:15:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Hello again from Art!', '2012-03-25 12:25:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Hola from Arthur!', '2012-03-25 12:35:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Buenos Dias from Art!', '2012-03-25 12:45:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Ni Hao from Art!', '2012-03-25 12:55:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Guten Tag from Art!', '2012-03-25 13:05:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Konnichi wa from Art!', '2012-03-25 13:15:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Buon giorno from Art!', '2012-03-25 13:25:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Bonjour from Art!', '2012-03-25 13:35:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'Aloha from Art!', '2012-03-25 13:45:00Z');
+insert into Blog (title, content, postedTime) values ('test title', 'God dag from Art!', '2012-03-25 13:55:00Z');

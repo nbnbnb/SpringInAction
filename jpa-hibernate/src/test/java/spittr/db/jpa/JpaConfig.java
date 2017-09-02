@@ -39,7 +39,7 @@ public class JpaConfig {
         emf.setDataSource(dataSource);
         emf.setPersistenceUnitName("spittr");
         emf.setJpaVendorAdapter(jpaVendorAdapter);
-        emf.setPackagesToScan("spittr.domain");
+        emf.setPackagesToScan("spittr.repo");
         return emf;
     }
 

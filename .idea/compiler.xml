@@ -13,8 +13,10 @@
         <module name="demo-jpa-hibernate" />
         <module name="demo-jpa-springdata" />
         <module name="demo-jsp" />
+        <module name="demo-mybatis" />
         <module name="demo-thymeleaf" />
         <module name="demo-tiles" />
+        <module name="MyBatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -25,9 +27,11 @@
       <module name="demo-jpa-hibernate" target="1.8" />
       <module name="demo-jpa-springdata" target="1.8" />
       <module name="demo-jsp" target="1.8" />
+      <module name="demo-mybatis" target="1.8" />
       <module name="demo-root" target="1.8" />
       <module name="demo-thymeleaf" target="1.8" />
       <module name="demo-tiles" target="1.8" />
+      <module name="MyBatis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/jpa-hibernate/demo-jpa-hibernate.iml" filepath="$PROJECT_DIR$/jpa-hibernate/demo-jpa-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-springdata/demo-jpa-springdata.iml" filepath="$PROJECT_DIR$/jpa-springdata/demo-jpa-springdata.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsp/demo-jsp.iml" filepath="$PROJECT_DIR$/jsp/demo-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis/demo-mybatis.iml" filepath="$PROJECT_DIR$/MyBatis/demo-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-root.iml" filepath="$PROJECT_DIR$/demo-root.iml" />
       <module fileurl="file://$PROJECT_DIR$/thymeleaf/demo-thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/demo-thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/tiles/demo-tiles.iml" filepath="$PROJECT_DIR$/tiles/demo-tiles.iml" />
