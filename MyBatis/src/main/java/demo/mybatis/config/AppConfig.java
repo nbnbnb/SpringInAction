@@ -24,6 +24,9 @@ public class AppConfig {
     @Bean
     @Profile("h2")
     public DataSource dataSourceForH2() {
+
+        // 使用内存中的 H2
+
         return new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2)
                 .addScripts("classpath:schema.sql", "classpath:test-data.sql")
@@ -67,7 +70,7 @@ public class AppConfig {
     @Bean
     @Profile("h2xml")
     public SqlSessionFactory getSqlSessionFactoryForH2() throws IOException {
-        String resource = "mybatis-config-sqlserver.xml";  // 从 XML 文件中获取 DataSource 数据
+        String resource = "mybatis-config-h2.xml";  // 从 XML 文件中获取 DataSource 数据
         InputStream inputStream = Resources.getResourceAsStream(resource);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
@@ -79,7 +82,6 @@ public class AppConfig {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
-
 
     @Bean
     @Profile({"h2", "sqlserver"})
