@@ -26,3 +26,5 @@ out/
 target/
 .idea/workspace.xml
 .idea/libraries/
+.idea/dataSources.local.xml
+.idea/dataSources/
