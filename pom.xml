@@ -14,15 +14,15 @@
     </properties>
 
     <modules>
-        <module>./jdbc</module>
-        <module>./jsp</module>
-        <module>./thymeleaf</module>
-        <module>./tiles</module>
-        <module>./common</module>
-        <module>./hibernate5</module>
-        <module>./jpa-hibernate</module>
-        <module>./jpa-springdata</module>
-        <module>./contacts</module>
+        <module>jdbc</module>
+        <module>jsp</module>
+        <module>thymeleaf</module>
+        <module>tiles</module>
+        <module>common</module>
+        <module>hibernate5</module>
+        <module>jpa-hibernate</module>
+        <module>jpa-springdata</module>
+        <module>contacts</module>
         <module>MyBatis</module>
     </modules>
     <build>
