@@ -49,7 +49,7 @@ public class RepositoryTestConfig implements TransactionManagementConfigurer {
         try {
             LocalSessionFactoryBean lsfb = new LocalSessionFactoryBean();
             lsfb.setDataSource(dataSource());
-            lsfb.setPackagesToScan("spittr.repo");
+            lsfb.setPackagesToScan("spittr.domain");
             Properties props = new Properties();
             props.setProperty("dialect", "org.hibernate.dialect.H2Dialect");
             lsfb.setHibernateProperties(props);

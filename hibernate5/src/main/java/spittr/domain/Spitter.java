@@ -2,7 +2,6 @@ package spittr.domain;
 
 import javax.persistence.*;
 
-
 @Entity
 public class Spitter {
 
