@@ -24,10 +24,6 @@ public class SpitterRepositoryTest {
     SpitterRepository spitterRepository;
 
     private static void assertSpitter(int expectedSpitterIndex, Spitter actual) {
-        assertSpitter(expectedSpitterIndex, actual, "Newbie");
-    }
-
-    private static void assertSpitter(int expectedSpitterIndex, Spitter actual, String expectedStatus) {
         Spitter expected = SPITTERS[expectedSpitterIndex];
         assertEquals(expected.getId(), actual.getId());
         assertEquals(expected.getUsername(), actual.getUsername());
