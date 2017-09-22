@@ -11,7 +11,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import spittr.Spitter;
+import spittr.entity.Spitter;
 import spittr.data.SpitterRepository;
 
 @Controller

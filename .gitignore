@@ -28,3 +28,4 @@ target/
 .idea/libraries/
 .idea/dataSources.local.xml
 .idea/dataSources/
+.idea/preferred-vcs.xml

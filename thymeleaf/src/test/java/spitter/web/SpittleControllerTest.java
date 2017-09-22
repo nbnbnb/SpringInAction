@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.servlet.view.InternalResourceView;
 
-import spittr.Spittle;
+import spittr.entity.Spittle;
 import spittr.data.SpittleRepository;
 import spittr.web.SpittleController;
 

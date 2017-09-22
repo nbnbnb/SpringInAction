@@ -3,7 +3,7 @@ package spitter.web;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
-import spittr.Spitter;
+import spittr.entity.Spitter;
 import spittr.data.SpitterRepository;
 import spittr.web.SpitterController;
 
