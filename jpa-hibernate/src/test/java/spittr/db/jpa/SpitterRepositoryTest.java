@@ -1,7 +1,6 @@
 package spittr.db.jpa;
 
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -93,12 +92,12 @@ public class SpitterRepositoryTest {
         assertSpitter(4, spitterRepository.findOne(5L));
     }
 
-    @Test
+    @Test(expected = javax.persistence.PersistenceException.class)
     @Transactional
-    @Ignore
     public void save_existingSpitter() {
         assertEquals(4, spitterRepository.count());
         Spitter spitter = new Spitter(4L, "arthur", "letmein", "Arthur Names", "arthur@habuma.com", false);
+        // 由于 id 是自动生成的，此处测试时会报错
         Spitter saved = spitterRepository.save(spitter);
         assertSpitter(5, saved);
         assertEquals(4, spitterRepository.count());
