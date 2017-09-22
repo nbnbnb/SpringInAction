@@ -1,12 +1,12 @@
 package demo.mybatis.entity;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public class Blog {
 
     public int id;
     public String title;
     public String content;
-    public Timestamp postedTime;
+    public LocalDateTime postedTime;
 
 }
