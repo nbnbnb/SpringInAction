@@ -1,7 +1,6 @@
 package demo.mybatis;
 
 import demo.mybatis.config.AppConfig;
-
 import demo.mybatis.repo.BlogRepository;
 import demo.mybatis.repo.BlogRepositoryXML;
 import org.springframework.context.ApplicationContext;
@@ -9,10 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class App {
     public static void main(String[] args) {
-        //h2();
+        h2();  // 使用的是内存数据库
         //sqlserver();
-        sqlserverWithXml();
-        //h2WithXml();
+        //sqlserverWithXml();
+        //h2WithXml(); // 需要开启 H2 本地数据库
     }
 
     private static void h2() {
